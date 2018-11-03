@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Product Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <header id="header">
+    <a href="#" class="logo"><img src="./img/galaxy-s9.png" alt="Galaxy S9" id="header-img"></a>
+    <nav id="nav-bar">
+      <a href="#highlight" class="nav-link">Highlights</a>
+      <a href="#camera" class="nav-link">Camera</a>
+      <a href="#variants" class="nav-link">Variants</a>
+      <a href="#pre-order" class="nav-link"><button>Pre Order</button></a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <img src="./img/hero.png" class="hero-img" alt="">
+      <div id="hero">
+        <h1>Galaxy S9</h1>
+        <p>The Camera Reimagined</p>
+        <button>Find Out More</button>
+      </div>    
+    </section>
+
+    <section id="highlight">
+      <h2>Meet The Revolutionary Smarthphone</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/5_-NKRVn7IQ?controls=0&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <section id="camera">
+      <h2>Camera</h2>
+      <div class="camera-desc-container">
+        <div class="camera-desc">Super Slow-mo</div>
+        <div class="camera-desc">Low light photos with noise reduction</div>
+        <div class="camera-desc">Dual Aperture</div>
+      </div>
+    </section>
+
+    <section id="variants">
+      <h2>Variants</h2>
+      <p>Samsung Galaxy S9 comes in three colors.</p>
+      <div class="variants-container">
+        <div class="circle purple" id="circle-purple" tabindex="1"></div>
+        <div class="circle black" id="circle-black" tabindex="1"></div>
+        <div class="circle blue" id="circle-blue" tabindex="1"></div>
+
+        <div id="var-purple">
+          <div class="phone"><img src="./img/lilac-purple.png" alt="lilac-purple"></div>
+          <p class="caption">lilac-purple</p>
+        </div>
+        
+        <div class="hidden" id="var-black">
+          <div class="phone"><img src="./img/midnight-black.png" alt="midnight-black"></div>
+          <p class="caption">midnight-black</p>
+        </div>
+        
+        <div class="hidden" id="var-blue">
+          <div class="phone"><img src="./img/coral-blue.png" alt="coral-blue"></div>
+          <p class="caption">coral-blue</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pre-order">
+      <h2>Don't just imagining</h2>
+      <p>Send us your email and we will give the previlage to be the first one</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" name="email" id="email" class="input-field" placeholder="your email here">
+        <input type="submit" value="submit" id="submit">
+      </form>
+    </section>
+
+    <footer>
+      <p>This landing page is made to accomplish <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page/" class="fcc-link">freeCodeCamp Projects</a>.<br>
+        Every material provided here is under copyright of Samsung.</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: pink;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 0 40px;
+  border-bottom: 1px solid #353535;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 50px -5px #353535;
+}
+
+#header-img {
+  height: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav-link {
+  margin-left: 18px;
+}
+
+.nav-link:hover {
+  color: #979797;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+button, #submit {
+  padding: 6px 20px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+#home {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  background: black;
+  /* background: black url("./img/hero.png") left no-repeat;
+  background-size: auto; */
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#hero {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  
+}
+  #hero > h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  #hero > p {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  #hero > button {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+
+h2 {
+  font-size: 3rem;
+}
+
+#highlight {
+  padding: 40px;
+  margin: 0;
+  background: black;
+}
+
+#video {
+  margin: 40px auto;
+  width: 72%;
+  height: 400px;
+}
+
+#camera {
+  position: relative;
+  margin: 0;
+  padding: 40px;
+  height: 360px;
+  background: black url("./img/camera.png") right no-repeat;
+  background-size: contain;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+#camera h2 {
+  position: absolute;
+  left: 15%;
+}
+
+.camera-desc-container {
+  position: absolute;
+  left: 40%;
+  height: 200px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.camera-desc {
+  font-size: 1.4rem;
+}
+
+#variants {
+  padding: 40px 20px;
+  background: black;
+}
+
+  #variants > p {
+    font-size: 1.4rem;
+  }
+.variants-container {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.circle {
+  display: none;
+}
+
+#pre-order {
+  padding: 40px 20px;
+  background: black;
+}
+
+  #pre-order p {
+    font-size: 1.4rem;
+  }
+
+.input-field {
+  width: 240px;
+  height: 30px;
+  padding-left: 12px;
+  margin: 20px 4px;
+  border: 1px solid #979797;
+  border-radius: 100px;
+  font-family: inherit;
+  font-weight: 400;
+
+}
+
+footer {
+  padding: 20px 20px;
+  background: #1b1b1b;
+}
+
+footer p {
+  font-weight: 100;
+}
+
+.fcc-link:hover {
+  color: rgb(0, 100, 0);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #home {
+    overflow: hidden;
+  }
+  
+  .hero-img {
+    /* height: 100%; */
+    width: auto;
+    transform: translate(-7%);
+  }
+
+  #hero {
+    width: 100%;
+    top: 20%;
+    left: 0;
+    text-align: center;
+  }
+
+  #camera {
+    display: block;
+    background-size: 65%;
+  }
+
+  #camera h2 {
+    position: initial;
+    margin-top: 20px;
+  }
+
+  .camera-desc-container {
+    position: initial;
+    height: 160px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #header {
+    flex-wrap: wrap;
+    padding: 6px 20px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .nav-link {
+    margin: 0 6px;
+    font-size: 0.75rem;
+  }
+
+  button, #submit {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .hero-img {
+    height: 60%;
+    /* width: auto; */
+    transform: translate(-9%);
+  }
+
+
+  #hero {
+    top: 15%;
+  }
+
+  #hero > h1 {
+    font-size: 3rem;
+  }
+
+  #hero > p {
+    font-size: 1.6rem;
+  }
+
+  #hero > button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #video {
+    margin: 20px auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #camera {
+    display: block;
+    background-size: cover;
+  }
+
+  .variants-container {
+    display: block;
+    /* flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly; */
+    position: relative;
+    height: 400px;
+    width: 90%;
+  }
+
+  .circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #979797;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  .purple {
+    background: #B98AC1;
+    transform: translateX(-250%)
+  }
+
+  .black {
+    background: #000;
+    transform: translateX(-50%);
+  }
+
+  .blue {
+    background: #2761AD;
+    transform: translateX(150%);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+        #circle-black:focus ~ #var-black {
+          display: block;
+        }
+
+        #circle-black:focus ~ #var-purple {
+          display: none;
+        }
+
+        #circle-blue:focus ~ #var-blue {
+          display: block;
+        }
+
+        #circle-blue:focus ~ #var-purple {
+          display: none;
+        }
+
+  #pre-order p {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+    font-weight: 100;
+  }
+}
